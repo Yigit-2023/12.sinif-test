@@ -1,3 +1,4 @@
+#Yazan: Yiğit
 import tkinter as tk
 
 pencere = tk.Tk()
@@ -74,7 +75,7 @@ def kaybett():
 
 
 
-	bilgi_notu = tk.Label(text="""1.Ünite\nTC inklap ve atatürkçülük sorularu içerir\n\nHazırlayan : Yiğit çıtak\n\nSürüm : 1.0beta\n\n\n\n""",font="italic 30",bg="light yellow")
+	bilgi_notu = tk.Label(text="""1.Ünite\n......... sorularu içerir\n\nHazırlayan : Yiğit çıtak\n\nSürüm : 1.0beta\n\n\n\n""",font="italic 30",bg="light yellow")
 	bilgi_notu.pack()
 
 	geri_don_tus = tk.Button(text="Geri",font="italic 25",command=geri_getir,bg="light yellow")
@@ -133,34 +134,26 @@ def test1():
 
 
 	test1s = tk.Label(test1p,text="""
-I.  Çanakkale
-
-II. Suriye
-
-III.Kafkas
-
-Yukarıda verilen cephelerden hangileri 1.dünya
-Savaşı'nda Osmanlı devleti'nin taaruz amaçlı
-açtığı cepheler arasında yer alır?
+Soru Gelecek
 
 		""",font="italic 12").pack()
 
 	reng0070 = "light blue"
 
 
-	test1A = tk.Button(test1p,text="A)\tYalnız I\t",bg=reng0070,command = test1a)
+	test1A = tk.Button(test1p,text="A)\t \t",bg=reng0070,command = test1a)
 	test1A.pack()
 
-	test1B = tk.Button(test1p,text="B)\tYalnız II\t",bg=reng0070,command = test1b)
+	test1B = tk.Button(test1p,text="B)\t \t",bg=reng0070,command = test1b)
 	test1B.pack()
 
-	test1C = tk.Button(test1p,text="C)\tYalnız III\t",bg=reng0070,command = test1c)
+	test1C = tk.Button(test1p,text="C)\t \t",bg=reng0070,command = test1c)
 	test1C.pack()
 
-	test1D = tk.Button(test1p,text="D)\tI ve III\t",bg=reng0070,command = test1d)
+	test1D = tk.Button(test1p,text="D)\t \t",bg=reng0070,command = test1d)
 	test1D.pack()
 
-	test1E = tk.Button(test1p,text="E)\tII ve III\t",bg=reng0070,command = test1e)
+	test1E = tk.Button(test1p,text="E)\t \t",bg=reng0070,command = test1e)
 	test1E.pack()
 
 	test1sil = tk.Button(test1p,text="\nTemizle\t\n",bg=reng0070,command = reset)
@@ -1524,7 +1517,7 @@ soru gelecek
 
 
 #pencere ayarları
-pencere.title("İnklap Testleri")
+pencere.title("Test uygulaması")
 pencere.state("zoomed")
 pencere.config(bg="light yellow")
 pencere.minsize(1200,500)
@@ -1611,12 +1604,7 @@ info_tus = tk.Button(text= "Bilgi",font=f"italic {buton_boyut}",command=kaybett,
 info_tus.place(x=550,y=590)
 
 
-while True:
-	giris = input()
-	if giris == "kaynak kod":
-		print("https://github.com/Yigit-2023/12.sinif-test\n")
-	else:
-		print()
+
 
 pencere.mainloop()
 
