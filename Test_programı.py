@@ -1518,9 +1518,9 @@ soru gelecek
 
 #pencere ayarları
 pencere.title("Test uygulaması")
-pencere.state("zoomed")
+
 pencere.config(bg="light yellow")
-pencere.minsize(1200,500)
+pencere.minsize(1500,700)
 
 buton_rengi = "grey"
 buton_boyut = "25"
